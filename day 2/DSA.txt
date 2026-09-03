@@ -1,0 +1,40 @@
+big O: it is a complexity that is going to be less or equal to the worst case
+big omega: complexity that is going to be at least more than the best 
+big theta : it is complexity that is within bounds of the worst and the best 
+
+---------------------------------------------------------------------------------
+
+o(1)-constant time
+array=[1,2,3,4,5]
+array[0] // it takes constant time to access first element
+
+o(N)-linear time 
+---------------------------------------------------------------------------------
+
+array = [1,2,3,4,5]
+for element in array:
+    print(element)
+//linear time since it is visiting every element of array 
+
+-------------------------------------------------------------------------------------
+
+o(logN)-Logrithmic time 
+array = [1,2,3,4,5]
+for index in range(0,len(array),3):
+  print(array[index])
+//logarithmic time since it is visiting only some elements 
+---------------------------------------------------------------------------------------------
+
+o(N2)-quadratic time (looking at every index twice)
+array = [1,2,3,4,5]
+
+for x I array:
+ for y in array:
+     
+ print(x,y)
+-------------------------------------------------------------------
+O(2n)-Exponential time 
+def Fibonacci (n):
+  if n<=1:
+          return n 
+return Fibonacci(n-1)+Fibonacci(n-2)  
